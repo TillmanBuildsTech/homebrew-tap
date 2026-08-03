@@ -4,22 +4,22 @@ cask "hourglass" do
 
   on_macos do
     on_intel do
-      sha256 "a0e6c13a8d3a4220144bcb412b62cf3c1932d6677142eacb990f155ccf63c652"
+      sha256 "036ac055383000a736337de1e04187ee1dc77db06051fcba9038703eb277eba7"
       url "https://github.com/TillmanBuildsTech/hourglass/releases/download/v#{version}/hourglass_darwin_amd64.tar.gz"
     end
     on_arm do
-      sha256 "d33920cd525b3d02a498b004603ae9f09e5ff7ed404a5a1fd4351c7329734716"
+      sha256 "81d967622a42fa700009ed52db7a877d6b32d34172f637aac6d8a935b0a7ec5a"
       url "https://github.com/TillmanBuildsTech/hourglass/releases/download/v#{version}/hourglass_darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "36e1b207b0d3ef5ce18d13830f654e011a305a2e4037a5bc978f271327e92588"
+      sha256 "fc35c5f46592af06b78d57657184ff4ac88d146d496bba844a375fe30730fafc"
       url "https://github.com/TillmanBuildsTech/hourglass/releases/download/v#{version}/hourglass_linux_amd64.tar.gz"
     end
     on_arm do
-      sha256 "6a8a2959a449fce5ad6f5218fdb614b5995f5e6ac486b0af47c867fb16b18802"
+      sha256 "6c9304eb2456394f21d7550b5c3b678402dded088da78c7882a78ba0be1624b5"
       url "https://github.com/TillmanBuildsTech/hourglass/releases/download/v#{version}/hourglass_linux_arm64.tar.gz"
     end
   end
