@@ -1,8 +1,8 @@
 class Hourglass < Formula
   desc "Self-hosted web UI for managing Linux and macOS cron jobs"
   homepage "https://github.com/TillmanBuildsTech/hourglass"
-  url "https://github.com/TillmanBuildsTech/hourglass/archive/refs/tags/v0.10.0.tar.gz"
-  sha256 "6733d71eb0e69d3652390e16180277c90144ac89226c1a2a6b285c14cfad6260"
+  url "https://github.com/TillmanBuildsTech/hourglass/archive/refs/tags/v0.10.1.tar.gz"
+  sha256 "faa371d0edd310ae99c4caa0d5be8a21d1cafa7dc503ec20ffeb369d26cbef9b"
   license "MIT"
 
   depends_on "go" => :build
