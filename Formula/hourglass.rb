@@ -1,8 +1,8 @@
 class Hourglass < Formula
   desc "Self-hosted web UI for managing Linux and macOS cron jobs"
   homepage "https://github.com/TillmanBuildsTech/hourglass"
-  url "https://github.com/TillmanBuildsTech/hourglass/archive/refs/tags/v0.12.0.tar.gz"
-  sha256 "8c33dcd5db873b1e8a9d13f49eda14aabb95c0ed283eda1920a3fbd0234ef089"
+  url "https://github.com/TillmanBuildsTech/hourglass/archive/refs/tags/v0.13.0.tar.gz"
+  sha256 "5ee21407f2f74e757242f6024f915a6c285f3562da98d925b4b1af0435e94809"
   license "MIT"
 
   depends_on "go" => :build
@@ -17,14 +17,15 @@ class Hourglass < Formula
   end
 
   # brew services start hourglass — runs as a launchd agent.
-  # v0.13.0+: the app defaults to a LAN-reachable bind (0.0.0.0:8080) with
-  # mDNS advertisement, so hourglass.local works out of the box from any
-  # device (the Home Assistant model). On first run a random password is
-  # generated and printed to the log (saved in ~/.hourglass/auth.env) — the
-  # instance is never served unauthenticated. To force loopback-only, set
+  # v0.13.0+: the app defaults to a LAN-reachable bind (0.0.0.0:8080)
+  # with mDNS advertisement, so hourglass.local works out of the box
+  # from any device (the Home Assistant model). On first run a random
+  # password is generated and printed to the log (saved in
+  # ~/.hourglass/auth.env) — the instance is never served
+  # unauthenticated. To force loopback-only, set
   # HOURGLASS_BIND=127.0.0.1:8080 in
-  # ~/Library/LaunchAgents/homebrew.mxcl.hourglass.plist (no credentials
-  # needed for loopback), then `brew services restart hourglass`.
+  # ~/Library/LaunchAgents/homebrew.mxcl.hourglass.plist (no
+  # credentials needed for loopback), then .
   service do
     run [opt_bin/"hourglass"]
     keep_alive true
